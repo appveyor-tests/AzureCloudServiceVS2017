@@ -4,4 +4,4 @@ before_build:
 - nuget restore
 
 test_script:
-- vstest.console "C:\projects\azurecloudservicevs2017\WebRole1.Tests\bin\Debug\WebRole1.Tests.dll"
+- vstest.console /logger:Appveyor "C:\projects\azurecloudservicevs2017\WebRole1.Tests\bin\Debug\WebRole1.Tests.dll"
