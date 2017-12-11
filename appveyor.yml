@@ -3,6 +3,6 @@ image: Visual Studio 2017
 before_build:
 - nuget restore
 
-test_script:
-- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
-- vstest.console /logger:Appveyor "C:\projects\azurecloudservicevs2017\WebRole1.Tests\bin\Debug\WebRole1.Tests.dll"
+#test_script:
+#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+#- vstest.console /logger:Appveyor "C:\projects\azurecloudservicevs2017\WebRole1.Tests\bin\Debug\WebRole1.Tests.dll"
